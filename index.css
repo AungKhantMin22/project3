@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url(https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJsYWNrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  background: rgba(0, 0, 0, 0.295);
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+}
+nav > a {
+  font-size: 1.5em;
+  color: orangered;
+  text-transform: capitalize;
+}
+.logo {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.nav_link > a {
+  padding: 0 20px;
+  font-size: 1.2em;
+  transition: 0.5s;
+  color: white;
+}
+.nav_link > a:hover {
+  letter-spacing: 2px;
+  color: orangered;
+}
+
+#bars {
+  background: orangered;
+  padding: 6px 8px;
+  color: aliceblue;
+  border-radius: 5px 8px;
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#bars:hover {
+  background: white;
+  color: black;
+}
+.form > form {
+  background: orangered;
+  border-radius: 4px;
+  border: none;
+  width: 250px;
+  height: 40px;
+}
+form > input {
+  height: 40px;
+  background: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 2px white;
+}
+input::placeholder {
+  padding: 0 8px;
+  color: rgba(255, 255, 255, 0.603);
+}
+form > input[type="submit"] {
+  color: white;
+  background: orangered;
+  padding-left: 10px;
+  box-shadow: none;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  height: 600px;
+}
+.main1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.178);
+}
+.main1 > .text_gp {
+  padding-bottom: 30px;
+  padding-left: 40px;
+  color: aliceblue;
+}
+.text_gp > h1 > i {
+  color: orangered;
+}
+.link_gp {
+  display: flex;
+  background: orangered;
+  width: 100px;
+  box-shadow: 0 0 2px white;
+  inset: 0 0 2px white;
+  border-radius: 3px;
+}
+.link_gp > a {
+  padding: 10px 20px 10px 20px;
+  color: white;
+  transition: 0.5s;
+}
+.link_gp > a:hover {
+  background: white;
+  color: black;
+}
+.main2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.219);
+}
+.main2 > .form1 > form {
+  display: block;
+  box-shadow: 0 0 2px white;
+  background: #000;
+  padding: 20px;
+  height: 370px;
+  border-radius: 4px;
+  width: 350px;
+  text-align: center;
+}
+.form1 > form > h2 {
+  background: white;
+  color: orangered;
+  width: 150px;
+  border-radius: 3px;
+  margin: 20px 0 12px 90px;
+}
+.main2 > .form1 > form > input {
+  width: 315px;
+  margin: 10px 0px 10px 0px;
+  box-shadow: 0 0 2px white;
+}
+.form1 > form > input[type="submit"] {
+  background: orangered;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.form1 > form > input[type="submit"]:hover {
+  background: white;
+  color: black;
+}
+.form1 > form > h4 {
+  color: white;
+}
+.form1 > form > h4 > a {
+  color: orange;
+}
+.form1 > form > h5 {
+  color: white;
+  padding-top: 5px;
+}
+.form1 > form > ul {
+  color: white;
+  padding: 15px;
+  font-size: 1.5em;
+}
+.form1 > form > ul > i {
+  padding: 0 10px;
+  transition: 0.5s;
+}
+.form1 > form > ul > i:hover {
+  color: orangered;
+}
+.adv {
+  display: flex;
+  color: white;
+  padding-top: 50px;
+  justify-content: flex-end;
+}
+/************************************************************************************************************************************************************************************************************************************************************************************************/
+
+@media (max-width: 500px) {
+  #bars {
+    display: block;
+  }
+  body {
+    overflow: none;
+  }
+  .main {
+    flex-direction: column;
+    height: 800px;
+  }
+  .nav_link {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.438);
+    top: 80px;
+    padding: 30px 90px;
+    left: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  .show {
+    transform: translateX(0);
+    /*display: block;*/
+  }
+  .nav_link > a {
+    display: block;
+    margin-bottom: 13px;
+    text-align: center;
+    background: rgba(255, 68, 0, 0.247);
+    border-radius: 3px;
+    box-shadow: 0 0 2px white;
+    inset: 0 0 2px white;
+  }
+}
